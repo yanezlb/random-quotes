@@ -1,6 +1,9 @@
 import React from 'react';
 import {Container, Row, Col, Alert } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
+import Quote from './components/Quote/Quote';
 
 const App = () => {
   return (
@@ -10,7 +13,9 @@ const App = () => {
           <Col xs lg="2">
             1 of 3
           </Col>
-          <Col md="auto">Variable width content</Col>
+          <Col md="auto">
+            <Quote text="Hla"></Quote>
+          </Col>
           <Col xs lg="2">
             3 of 3
           </Col>
@@ -23,11 +28,6 @@ const App = () => {
           </Col>
         </Row>
       </Container>
-      
-        <Alert variant="light">
-          This is a asdasd alert—check it out!
-        </Alert>
-      
     </div>
   );
 }
