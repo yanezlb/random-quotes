@@ -6,7 +6,7 @@ const Quote = ({text}) => {
     
     return (
         <Row>
-            <Col lg lg="12" >  
+            <Col lg="12" >  
                 <h2 className=""> {text} </h2>
             </Col>
         </Row>
